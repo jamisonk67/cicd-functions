@@ -85,11 +85,16 @@ def analyze_number(num):
     # TODO 6: Replace default values below with the results of the calculations from
     # TODOs 2-5.
 
+    test_value = 8 * num + 1
+    sqrt_test = int(math.sqrt(test_value))
+    is_triangular = (sqrt_test * sqrt_test == test_value)
+
     response = {
         "sum_of_digits": sum_of_digits,
         "is_prime": is_prime,
         "is_odd": is_odd,
-        "is_perfect": is_perfect
+        "is_perfect": is_perfect,
+        "is_triangular": is_triangular
     }
 
     return response
